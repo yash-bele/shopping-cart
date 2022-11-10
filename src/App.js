@@ -19,24 +19,20 @@ function App() {
     <div className='App'>
       <main>
         <form onSubmit={handleSubmit}>
-          <div>
-            <input
-              required
-              type='text'
-              placeholder='Item Name'
-              value={text.name}
-              onChange={handleChange('name')}
-            />
-          </div>
-          <div>
-            <input
-              required
-              type='number'
-              placeholder='Item Price'
-              value={text.price}
-              onChange={handleChange('price')}
-            />
-          </div>
+          <input
+            required
+            type='text'
+            placeholder='Item Name'
+            value={text.name}
+            onChange={handleChange('name')}
+          />
+          <input
+            required
+            type='number'
+            placeholder='Item Price'
+            value={text.price}
+            onChange={handleChange('price')}
+          />
           <button type='submit'>Add</button>
         </form>
         <table>
