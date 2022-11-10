@@ -60,7 +60,7 @@ function App() {
           <tfoot>
             <tr>
               <td colSpan={3}>
-                Total Price
+                Total Price{' '}
                 <span>${data.reduce((i, j) => i + j.price * 1, 0)}</span>
               </td>
             </tr>
